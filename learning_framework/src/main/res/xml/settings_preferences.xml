@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  - Copyright (c) 2016 Affectiva Inc.
+  - See the file license.txt for copying permission.
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="fps"
+        android:summary="@string/show_fps_message"
+        android:title="@string/show_fps_title" />
+    <EditTextPreference
+        android:defaultValue="20"
+        android:dialogTitle="@string/fps_edittext_title"
+        android:ems="3"
+        android:inputType="number"
+        android:key="rate"
+        android:maxLength="2"
+        android:summary="@string/set_fps_message"
+        android:title="@string/set_fps_title" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="track"
+        android:summary="@string/show_tracking_message"
+        android:title="@string/show_tracking_title" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="appearance"
+        android:summary="@string/show_appearance_message"
+        android:title="@string/show_appearance_title" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="emoji"
+        android:summary="@string/show_emoji_message"
+        android:title="@string/show_emoji_title" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="multiface"
+        android:summary="@string/show_multiface_message"
+        android:title="@string/show_multiface_title" />
+
+</PreferenceScreen>

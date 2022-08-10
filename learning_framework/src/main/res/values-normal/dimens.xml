@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  - Copyright (c) 2016 Affectiva Inc.
+  - See the file license.txt for copying permission.
+  -->
+
+<resources>
+    <dimen name="name_text_size">14sp</dimen>
+    <dimen name="pct_text_size">11sp</dimen>
+    <dimen name="menu_text_size">13sp</dimen>
+    <dimen name="metric_view_bar_length">80dp</dimen>
+    <dimen name="bottom_padding">5dp</dimen>
+    <dimen name="metric_viewgroup">130dp</dimen>
+    <dimen name="logo_width">120dp</dimen>
+    <dimen name="metric_panel_padding">10dp</dimen>
+    <dimen name="please_wait_textview_size">20sp</dimen>
+    <dimen name="settings_button_size">48dp</dimen>
+    <dimen name="settings_button_margin">10dp</dimen>
+    <dimen name="measurements_text_size">17sp</dimen>
+    <dimen name="measurements_upper_text_spacing">60dp</dimen>
+    <dimen name="measurements_lower_text_spacing">80dp</dimen>
+    <integer name="measurements_text_border_thickness">3</integer>
+    <dimen name="grid_item_chooser_text_size">15sp</dimen>
+    <dimen name="grid_item_checkbox_size">30dp</dimen>
+    <dimen name="header_text_size">21dp</dimen>
+    <dimen name="metric_chooser_text_size">18dp</dimen>
+    <dimen name="grid_item_left_padding">4dp</dimen>
+    <dimen name="grid_item_bottom_padding">8dp</dimen>
+    <dimen name="grid_item_metric_name">15sp</dimen>
+    <dimen name="metric_chooser_column_width">140dp</dimen>
+</resources>

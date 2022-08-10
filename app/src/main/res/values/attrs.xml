@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  - Copyright (c) 2016 Affectiva Inc.
+  - See the file license.txt for copying permission.
+  -->
+
+<resources>
+    <declare-styleable name="custom_attributes">
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="metricBarLength" format="dimension" />
+        <attr name="textDepth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="drawing_view_attributes">
+        <attr name="measurements_text_size" format="dimension" />
+        <attr name="measurements_upper_spacing" format="dimension" />
+        <attr name="measurements_lower_spacing" format="dimension" />
+        <attr name="measurements_color" format="color" />
+        <attr name="measurements_text_border_color" format="color" />
+        <attr name="measurements_text_border_thickness" format="float" />
+    </declare-styleable>
+</resources>

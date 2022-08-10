@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/send_button"
+        android:text="Send"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/send_button"
+        android:text="It looks like AffdexMe has crashed! Click below to send an automated report, then try restarting the app."/>
+
+
+</RelativeLayout>

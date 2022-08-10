@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  - Copyright (c) 2016 Affectiva Inc.
+  - See the file license.txt for copying permission.
+  -->
+
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="name_text_size">28sp</dimen>
+    <dimen name="pct_text_size">18sp</dimen>
+    <dimen name="menu_text_size">23sp</dimen>
+    <dimen name="metric_view_bar_length">140dp</dimen>
+    <dimen name="bottom_padding">15dp</dimen>
+    <dimen name="metric_viewgroup">220dp</dimen>
+    <dimen name="logo_width">250dp</dimen>
+    <dimen name="metric_panel_padding">25dp</dimen>
+    <dimen name="please_wait_textview_size">35sp</dimen>
+    <dimen name="settings_size">72dp</dimen>
+    <dimen name="settings_button_margin">15dp</dimen>
+    <dimen name="measurements_text_size">30sp</dimen>
+    <dimen name="measurements_upper_text_spacing">110dp</dimen>
+    <dimen name="measurements_lower_text_spacing">130dp</dimen>
+    <integer name="measurements_text_border_thickness">7</integer>
+    <dimen name="metric_chooser_text_size">26dp</dimen>
+    <dimen name="header_text_size">30dp</dimen>
+    <dimen name="grid_item_checkbox_size">60dp</dimen>
+    <dimen name="grid_item_chooser_text_size">24sp</dimen>
+    <dimen name="grid_item_left_padding">6dp</dimen>
+    <dimen name="grid_item_bottom_padding">12dp</dimen>
+    <dimen name="grid_item_metric_name">22sp</dimen>
+    <dimen name="metric_chooser_column_width">200dp</dimen>
+</resources>

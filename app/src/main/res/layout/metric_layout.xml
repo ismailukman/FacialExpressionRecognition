@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_height="@dimen/metric_viewgroup"
+    android:layout_width="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:background="@color/transparent_overlay"
+    android:paddingBottom="@dimen/bottom_padding"
+    >
+    <!-- Logo-->
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/logo_width"
+        android:layout_centerInParent="true"
+        android:src="@drawable/affectiva_logo_clear_background"
+        android:contentDescription="@string/affectiva_logo_content_description"
+        android:id="@+id/affectiva_logo" />
+    <!-- Left MetricsManager-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/metric_panel_padding"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/left_metrics">
+        <TextView
+            style="@style/metricName"
+            android:id="@+id/metric_name_0"
+            />
+        <com.affectiva.affdexme.MetricDisplay
+            style="@style/metricPct"
+            android:id="@+id/metric_pct_0" />
+        <TextView
+            style="@style/metricName"
+            android:id="@+id/metric_name_1" />
+        <com.affectiva.affdexme.MetricDisplay
+            style="@style/metricPct"
+            android:id="@+id/metric_pct_1" />
+        <TextView
+            style="@style/metricName"
+            android:id="@+id/metric_name_2" />
+        <com.affectiva.affdexme.MetricDisplay
+            style="@style/metricPct"
+            android:id="@+id/metric_pct_2" />
+    </LinearLayout>
+    <!-- FPS Counter-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/metricName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|bottom"
+            android:layout_weight="1"
+            android:id="@+id/fps_name"
+            android:text="@string/fps"
+            />
+        <TextView
+            style="@style/metricPct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|bottom"
+            android:id="@+id/fps_value"
+            android:textSize="@dimen/pct_text_size"
+            android:textColor="@color/letter_gray"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <!-- Right MetricsManager-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/metric_panel_padding"
+        android:layout_height="match_parent"
+        android:id="@+id/right_metrics">
+        <TextView
+            style="@style/metricName"
+            android:id="@+id/metric_name_3" />
+        <com.affectiva.affdexme.MetricDisplay
+            style="@style/metricPct"
+            android:id="@+id/metric_pct_3" />
+        <TextView
+            style="@style/metricName"
+            android:id="@+id/metric_name_4" />
+        <com.affectiva.affdexme.MetricDisplay
+            style="@style/metricPct"
+            android:id="@+id/metric_pct_4" />
+        <TextView
+            style="@style/metricName"
+            android:id="@+id/metric_name_5" />
+        <com.affectiva.affdexme.MetricDisplay
+            style="@style/metricPct"
+            android:id="@+id/metric_pct_5" />
+    </LinearLayout>
+</RelativeLayout>

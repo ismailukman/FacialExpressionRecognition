@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:keepScreenOn="true"
+    tools:context=".MainActivity">
+
+    <SurfaceView
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <com.affectiva.affdexme.DrawingView
+        android:id="@+id/drawing_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        custom:measurements_color="#DDDDDD"
+        custom:measurements_lower_spacing="@dimen/measurements_lower_text_spacing"
+        custom:measurements_text_border_color="@color/letter_gray"
+        custom:measurements_text_border_thickness="@integer/measurements_text_border_thickness"
+        custom:measurements_text_size="@dimen/measurements_text_size"
+        custom:measurements_upper_spacing="@dimen/measurements_upper_text_spacing" />
+
+    <include
+        android:id="@+id/metric_view_group"
+        layout="@layout/metric_layout" />
+
+    <ImageButton
+        android:id="@+id/settings_button"
+        android:layout_width="@dimen/settings_button_size"
+        android:layout_height="@dimen/settings_button_size"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/metric_view_group"
+        android:layout_margin="@dimen/settings_button_margin"
+        android:background="@null"
+        android:contentDescription="@string/settings_content_description"
+        android:onClick="settings_button_click"
+        android:scaleType="fitCenter"
+        android:src="@drawable/settings_button_selector" />
+
+    <ImageButton
+        android:id="@+id/camera_button"
+        android:layout_width="@dimen/settings_button_size"
+        android:layout_height="@dimen/settings_button_size"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/settings_button"
+        android:layout_margin="@dimen/settings_button_margin"
+        android:background="@null"
+        android:contentDescription="Switch camera button"
+        android:onClick="camera_button_click"
+        android:scaleType="fitCenter"
+        android:src="@drawable/camera_button_selector" />
+
+    <ImageButton
+        android:id="@+id/screenshot_button"
+        android:layout_width="@dimen/settings_button_size"
+        android:layout_height="@dimen/settings_button_size"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/camera_button"
+        android:layout_margin="@dimen/settings_button_margin"
+        android:background="@null"
+        android:contentDescription="Take screenshot"
+        android:onClick="takeScreenshot"
+        android:scaleType="fitCenter"
+        android:src="@drawable/screenshot_button_selector" />
+
+    <include layout="@layout/insufficent_permissions_panel" />
+
+    <RelativeLayout
+        android:id="@+id/progress_bar_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <TextView
+            style="@android:style/TextAppearance.Holo.Medium.Inverse"
+            android:id="@+id/please_wait_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/loading"
+            android:textSize="@dimen/please_wait_textview_size" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="@dimen/please_wait_textview_size"
+            android:layout_height="@dimen/please_wait_textview_size"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/please_wait_textview"
+            android:indeterminate="true"
+            android:paddingRight="10dp" />
+
+        <TextView
+            style="@android:style/TextAppearance.Holo.Medium.Inverse"
+            android:id="@+id/not_found_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:gravity="center"
+            android:padding="20sp"
+            android:text="@string/not_found"
+            android:textColor="#CCCCCC"
+            android:textSize="20sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>
+

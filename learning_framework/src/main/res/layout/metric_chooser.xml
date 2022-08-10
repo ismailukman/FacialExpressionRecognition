@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/metric_chooser_root_layout"
+    android:soundEffectsEnabled="true">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textSize="@dimen/metric_chooser_text_size"
+        android:text="@string/choose_six_message"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_all"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/clear_all_button"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/clear_all_button"
+            android:textSize="@dimen/metric_chooser_text_size"
+            android:id="@+id/metrics_chooser_textview"
+            android:text="@string/metric_chooser_default_message"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/metric_chooser_gridlayout"
+            android:orientation="horizontal"
+            android:columnOrderPreserved="true"
+            />
+    </ScrollView>
+</LinearLayout>

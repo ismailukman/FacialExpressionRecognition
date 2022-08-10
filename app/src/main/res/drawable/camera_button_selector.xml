@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  - Copyright (c) 2016 Affectiva Inc.
+  - See the file license.txt for copying permission.
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/switch_camera_button" android:state_pressed="true" />
+    <item android:drawable="@drawable/switch_camera_button_pressed" />
+</selector>

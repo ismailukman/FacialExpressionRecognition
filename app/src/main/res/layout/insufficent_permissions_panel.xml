@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/permissionsUnavialableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:visibility="gone">
+
+    <TextView
+        style="@android:style/TextAppearance.Holo.Large.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bottom_padding"
+        android:text="@string/insufficient_permissions" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="@dimen/bottom_padding"
+        android:contentDescription="@string/error"
+        android:src="@android:drawable/presence_busy" />
+
+    <TextView
+        style="@android:style/TextAppearance.Holo.Small.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/bottom_padding"
+        android:gravity="center"
+        android:text="@string/permissions_camera_needed_explanation" />
+
+    <Button
+        android:id="@+id/retryPermissionsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/retry" />
+
+</LinearLayout>

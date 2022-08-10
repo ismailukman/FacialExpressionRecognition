@@ -1,0 +1,13 @@
+sudo: false
+language: android
+jdk: oraclejdk8
+android:
+  components:
+    - tools
+    - build-tools-25.0.2
+    - android-25
+    - extra
+    - platform-tools
+
+script:
+  - ./gradlew clean build test

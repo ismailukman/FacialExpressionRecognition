@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  - Copyright (c) 2016 Affectiva Inc.
+  - See the file license.txt for copying permission.
+  -->
+
+<resources>
+
+    <style name="metricPct">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="textColor">@color/letter_gray</item>
+        <item name="textSize">@dimen/pct_text_size</item>
+        <item name="metricBarLength">@dimen/metric_view_bar_length</item>
+    </style>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  - Copyright (c) 2016 Affectiva Inc.
+  - See the file license.txt for copying permission.
+  -->
+
+<resources>
+
+    <style name="optionsStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/letter_gray</item>
+        <item name="android:textSize">@dimen/menu_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

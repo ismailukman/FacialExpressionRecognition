@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/grid_item_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="8dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp">
+
+        <ImageView
+            android:id="@+id/grid_item_image_view_beneath"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/grid_item_text"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/grid_item_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/grid_item_text"
+            android:scaleType="fitCenter" />
+
+        <FrameLayout
+            android:id="@+id/video_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/grid_item_text"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/grid_item_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/transparent_overlay"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/grid_item_metric_name" />
+
+        <TextView
+            android:id="@+id/video_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/grid_item_text"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textSize="@dimen/grid_item_chooser_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</FrameLayout>

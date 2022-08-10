@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+
+    defaultConfig {
+        applicationId "com.affectiva.affdexme"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 685
+        versionName "3.2.0"
+        setProperty("archivesBaseName", "AffdexMe-$versionName-$versionCode")
+    }
+    buildTypes {
+        debug {
+            resValue 'string', 'app_name', 'AffdexMeDbg'
+            applicationIdSuffix ".debug"
+        }
+        release {
+            resValue 'string', 'app_name', 'AffdexMe'
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['jniLibs']
+            jni.srcDirs = [] //disable automatic ndk-build
+        }
+    }
+}
+
+dependencies {
+    //include the Affdex SDK
+    compile('com.affectiva.android:affdexsdk:3.+')
+
+    //include project dependencies
+    compile 'com.android.support:support-v4:25.1.0'
+    compile 'com.android.support:appcompat-v7:25.1.0'
+}
+
+// build a signed release apk only if the environment is configured
+// with the properties that let us access the keystore.  you can put
+// them into ~/.gradle/gradle.properties
+if (project.hasProperty('releaseKeystoreFile')) {
+    android.signingConfigs {
+        release {
+            storeFile file(releaseKeystoreFile)
+            storePassword releaseKeystorePassword
+            keyAlias releaseKeyAlias
+            keyPassword releaseKeyPassword
+        }
+    }
+    android.buildTypes.release.signingConfig = android.signingConfigs.release
+}

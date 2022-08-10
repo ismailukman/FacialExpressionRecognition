@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  - Copyright (c) 2016 Affectiva Inc.
+  - See the file license.txt for copying permission.
+  -->
+
+<resources>
+    <!--MainActivity strings-->
+    <string name="not_found">Sorry, AffdexMe requires the use of a front-facing camera, which was not found on your device.</string>
+    <string name="affectiva_logo_content_description">Affectiva Logo</string>
+    <string name="fps">FPS:</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="settings_content_description">Settings</string>
+
+    <string name="insufficient_permissions">Insufficient Permissions</string>
+    <string name="permissions_camera_needed_explanation">This app requires the permission to access your camera to be able to gather facial images for processing. No video is saved or used other than for immediate emotion processing.</string>
+    <string name="permissions_storage_needed_explanation">This app requires the permission to access your external storage to save screenshots.</string>
+    <string name="error">Error</string>
+    <string name="understood">Understood</string>
+    <string name="retry">Retry</string>
+
+    <!--MetricSelectionFragment strings-->
+    <string name="clear_all">Clear All</string>
+    <string name="metric_chooser_default_message">0 metrics chosen.</string>
+    <string name="choose_six_message">Choose 6 emotions and expressions below to display on the main screen.</string>
+
+    <!--SettingsActivity strings-->
+    <string name="select_metrics_title">Select Metrics</string>
+    <string name="select_metrics_message">Select emotions and expressions to display.</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_message">Change application settings.</string>
+
+    <!--SettingsFragment strings-->
+    <string name="set_fps_title">Set Target FPS</string>
+    <string name="set_fps_message">Set the desired processed frames per second.</string>
+    <string name="fps_edittext_title">Processed Frames Per Second</string>
+    <string name="show_tracking_title">Show Tracking Dots</string>
+    <string name="show_tracking_message">Display tracking dots and bounding box.</string>
+    <string name="show_appearance_title">Show Appearance Indicators</string>
+    <string name="show_appearance_message">Display appearance markers adjacent to the bounding box.</string>
+    <string name="show_fps_title">Show FPS</string>
+    <string name="show_fps_message">Display the actual processed frames per second.</string>
+    <string name="show_emoji_title">Show Emoji Indicators</string>
+    <string name="show_emoji_message">Display emoji markers adjacent to the bounding box.</string>
+    <string name="show_multiface_message">Track multiple people. A beta feature that is CPU intensive, and works only on newer devices.</string>
+    <string name="show_multiface_title">Enable Multi-face mode</string>
+    <string name="negative">NEGATIVE</string>
+    <string name="positive">POSITIVE</string>
+</resources>
